@@ -62,3 +62,21 @@ function calculate(){
     console.log("ainda não é possível calcular")
   } 
 }          
+
+function reset () {
+    billInput.value = ""
+    bill = 0 
+    numberOfPeople.value = ""
+    numberOfPeople = 0 
+
+    buttonSelected.classlist.remove("button-selected")
+    buttonSelected = null
+    tipPercentage = 0 
+}
+
+function removeClassButtonSelected(){
+    if (buttonSelected !== null) {
+        buttonSelected.classList.remove("button-selected")
+        buttonSelected= null
+    }
+}
